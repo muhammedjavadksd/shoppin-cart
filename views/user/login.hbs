@@ -1,0 +1,20 @@
+ <section>
+     <div class="container">
+         <h2 class="text-center mt-3">Login</h2>
+    <form action="/login" class="mt-2" method="POST">
+    {{#if logginErr}}
+      <p class="err">Invalid user name or password</p>
+    {{/if}}
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <a href="/register">dont have an account? register here</a><br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+      </div>
+ </section>
